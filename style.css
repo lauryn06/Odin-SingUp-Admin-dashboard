@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.picture{
+    width: 30vw;
+    height: 90vh;
+    margin: 0.2rem;
+    background-image: url(images.jpeg);
+    background-repeat: repeat;
+}
+.login{
+    width: 60vw;
+    height: 90vh;
+    margin: 0.5rem;
+}
