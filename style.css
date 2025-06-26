@@ -9,7 +9,7 @@ body{
     background-color: rgba(255, 255, 255, 0.082);
 }
 .picture{
-    width: 30vw;
+    width: 40vw;
     height: 100vh;
     margin: 0.2rem;
     background-image: url(dd3c9672-2595-42a1-9976-27523d5d7d83.jpeg);
@@ -26,8 +26,14 @@ body{
    
 }
 .login .upper > p{
-    margin: 0.5rem;
-    font-weight: 600;
+   margin-top: 5rem;
+   margin-left: 0.5rem;
+    font-weight: 500;
+    font-style: normal;
+}
+h5{
+    margin-left: 0.5rem;
+    font-weight: 300;
 }
 #logo{
     width: 4rem;
