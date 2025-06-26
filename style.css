@@ -6,17 +6,90 @@
 body{
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.082);
 }
 .picture{
     width: 30vw;
-    height: 90vh;
+    height: 100vh;
     margin: 0.2rem;
-    background-image: url(images.jpeg);
-    background-repeat: repeat;
+    background-image: url(dd3c9672-2595-42a1-9976-27523d5d7d83.jpeg);
+ background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .login{
-    width: 60vw;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+.login .upper > p{
     margin: 0.5rem;
+    font-weight: 600;
+}
+#logo{
+    width: 4rem;
+    height: auto;
+    /* background-color: rgba(0, 0, 0, 0.336); */
+}
+.login > .middle{
+    display: flex;
+    flex-direction: column;
+ margin-top: 1rem;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.288);
+}
+ .login .middle > h4{
+    font-weight: 500;
+    
+} 
+.names,.passwords, .other {
+    display: flex;
+    flex-direction: row;
+     width: 60vw;
+}
+div > label, div > input{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    font-weight: 100;
+}
+div > input{
+    height: 2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 25vw;
+
+}
+button{
+background-color: rgba(135, 207, 235, 0.808);
+    height: 2rem;
+    border: 1px;
+    color: white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
+    border-radius: 5px;
+    width: 20vw;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+div > h4{
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+        font-weight: 300;
+}
+div h4 > a{
+    color: black;
+    font-weight: 700;
+}
+@font-face {
+  font-family: 'NorseBold';
+  src: url('Norse-Bold.otf') format('opentype');
+}
+
+h1{
+color: white;
+font-family: 'NorseBold' , sans-serif;
+font-size: 3rem;
+font-weight: 400;
 }
