@@ -2,10 +2,23 @@ const createAccount=document.querySelector(".create");
 const Password=document.querySelector("#password");
 const confirmPassword=document.querySelector("#conf_password");
 const text=document.querySelector(".text");
+const login=document.querySelector(".login");
+const loginB=document.querySelector(".log");
+const logout=document.querySelector(".logout");
 
 createAccount.addEventListener("click",()=>{
     document.location="admin.html";
 });
+login.addEventListener("click",()=>{
+    document.location="login.html";
+});
+loginB.addEventListener("click",()=>{
+    document.location="admin.html";
+});
+logout.addEventListener("click",()=>{
+    document.location="index.html";
+});
+
 if(password===confirmPassword){
     text.textContent=" ";
 }
