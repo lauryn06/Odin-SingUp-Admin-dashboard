@@ -1,35 +1,49 @@
 const createAccount=document.querySelector(".create");
 const Password=document.querySelector("#password");
 const confirmPassword=document.querySelector("#conf_password");
-const text=document.querySelector(".text");
-const login=document.querySelector(".login");
-const loginB=document.querySelector(".log");
-const logout=document.querySelector(".logout");
 
-createAccount.addEventListener("click",()=>{
-    document.location="admin.html";
-});
+const text=document.querySelector(".text");
+
+
+
+
+const login=document.querySelector("#login1");
 login.addEventListener("click",()=>{
     document.location="login.html";
 });
-loginB.addEventListener("click",()=>{
+
+const logbtn=document.querySelector("#log");
+logbtn.addEventListener("click",(e)=>{
+    e.preventDefault();
     document.location="admin.html";
 });
+
+const logout=document.querySelector(".lg");
 logout.addEventListener("click",()=>{
     document.location="index.html";
 });
 
-if(password===confirmPassword){
-    text.textContent=" ";
+
+createAccount.addEventListener("click",()=>{
+
+if(password.value===confirmPassword.value){
+    text.textContent=" Password Matched!";
+        text.style.color="green";
+          document.location="admin.html";
 }
-else if(confirmPassword===" "){
+else if(confirmPassword.value===" "){
 text.textContent=" Confirm your password ";
+text.style.color="Red";
 }
-else if(password===""){
+else if(password.value===""){
     text.textContent=" Enter a password!!";
-}else if(Password!==confirmPassword && confirmPassword){
+    text.style.color="Red";
+}else if(Password.value!==confirmPassword.value && confirmPassword){
     text.textContent="Passwords are not matching";
+    text.style.color="Red";
 }
+
 else{
     text.textContent=" ";
 }
+});
