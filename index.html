@@ -20,7 +20,7 @@
 </div>
 <div class="middle">
     <h4 class="text"></h4>
-    <form action="/index.html" method="post">
+    <form action="" method="">
         <section class="names">
             <div>
         <label for="fname">First Name</label>
@@ -34,7 +34,7 @@
         <section class="other">
         <div>
             <label for="">Email</label>
-            <input type="email" required>
+            <input type="email" >
         </div>
         <div>
             <label for="">Phone Number</label>
@@ -49,17 +49,55 @@
 </div>
 <div>
         <label for="password">Confirm Password</label>
-    <input type="password" name="password" id="conf_password" required>
+    <input type="password" name="password" id="conf_password" required >
     </div>
 </section>
    
 </div>
 <div class="lowwer">
     <button type="submit" class="create">Create Account</button>
-    <h4>Arleady have an account? <a href="#" id="login1">Login</a></h4>
+    <h4>Arleady have an account? <a href="login.html">Login</a></h4>
 </div>
  </form>
     </div>
-    <script src="script.js"></script>
+    <script >
+        const createAccount=document.querySelector(".create");
+const Password=document.querySelector("#password");
+const confirmPassword=document.querySelector("#conf_password");
+const text=document.querySelector(".text");
+const logout= document.querySelector(".logout");
+
+
+const log=document.querySelector("#login");
+
+log.addEventListener("click",() =>{
+
+    document.location="admin.html";
+});
+
+createAccount.addEventListener("click",()=>{
+document.location="admin.html";
+// if(password.value===confirmPassword.value){
+//     text.textContent=" Password Matched!";
+//         text.style.color="green";
+//           document.location="admin.html";
+// }
+// else if(confirmPassword.value===" "){
+// text.textContent=" Confirm your password ";
+// text.style.color="Red";
+// }
+// else if(password.value===""){
+//     text.textContent=" Enter a password!!";
+//     text.style.color="Red";
+// }else if(Password.value!==confirmPassword.value && confirmPassword){
+//     text.textContent="Passwords are not matching";
+//     text.style.color="Red";
+// }
+
+// else{
+//     text.textContent=" ";
+// }
+});
+    </script>
 </body>
 </html>

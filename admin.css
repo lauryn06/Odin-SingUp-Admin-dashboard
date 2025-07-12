@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.left{
+    background-color:rgba(6, 61, 240, 0.753);
+    color: white;
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+.top_left{
+    padding-top: 1.5rem;
+    font-size: 0.8rem;
+    padding-left: 0.2rem;
+}
+h3,h1{
+    padding:0.4rem;
+    font-weight: 400;
+}
+h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+h3 > i,h1 > i{
+    padding-right:0.3rem;
+    font-weight: 400;
+}
+
+.bottom_left{
+    padding-top:2.5rem ;
+        font-size: 0.8rem;
+}

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
 </head>
 <body>
     <div class="picture">
@@ -20,33 +19,65 @@
 </div>
 <div class="middle">
     <h4 class="text"></h4>
-    <form action="/index.html" method="post">
+    <form action="" method="">
         <section class="other">
         <div>
-            <label for="">Email</label>
-            <input type="email" required>
+            <label for="">First Name</label>
+            <input type="text" class="First">
         </div>
         <div>
             <label for="">Phone Number</label>
-            <input type="number" name="" id="" required>
+            <input type="number" name="" id="number">
         </div>
         </section>
 
 <section class="passwords">
     <div>
     <label for="password">Password</label>
-    <input type="password" name="password" id="password" required>
+    <input type="password" name="password" id="password">
 </div>
 </section>
 <div class="lowwer">
-    <button type="submit" id="log">Login</button>
+    <button  id="login"><a href="admin.html">Login</a></button>
 
-        <button class="lg">Logout</button>
 </div>
     </form>
+     <button class="logout"><a href="index.html">Logout</a></button>
 </div>
 
     </div>
-    <script src="script.js"></script>
+
+    <script>
+ 
+const Password=document.querySelector("#password");
+const number=document.querySelector("#number");
+const text=document.querySelector(".text");
+const Fname= document.querySelector(".First");
+
+
+const log=document.querySelector("#login");
+
+log.addEventListener("click",() =>{
+    document.location="admin.html";
+     
+    if(Password.value !==" " && number.value !==" " && Fname.value !==" "){
+ document.location="admin.html";
+    }
+     if(Password.value===""){
+        text.textContent="Enter your password";
+        text.style.color="red";
+    }
+    else if(number.value===""){
+           text.textContent="Phone Number filed missing";
+        text.style.color="red"; 
+    }else if (Fname.value===""){
+        text.textContent="Enter your Username";
+        text.style.color="red";
+    }else{
+        document.location="admin.html";
+    }
+    
+});
+</script>
 </body>
 </html>
