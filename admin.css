@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+}
 .left{
     background-color:rgba(6, 61, 240, 0.753);
     color: white;
@@ -22,7 +25,7 @@ h3,h1{
     font-weight: 400;
 }
 h1{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 h3 > i,h1 > i{
@@ -33,4 +36,62 @@ h3 > i,h1 > i{
 .bottom_left{
     padding-top:2.5rem ;
         font-size: 0.8rem;
+}
+a{
+    display: inline-block;
+    border-radius: 30px;
+    padding-top: 0.5rem;
+  padding-left: 0.5rem;
+    text-decoration: none;
+    margin-left: 2rem;
+    width: 5rem;
+    margin-top: 0.5rem;
+    color: white;
+    text-align: center;
+    background-color: rgba(6, 61, 240, 0.753);
+}
+.right_top{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+box-shadow: 2px 2px 2px black;
+width: 75vw;
+height: 15vh;
+    
+}
+.other{
+    margin-left: 25vw;
+}
+.bottom_right{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+.box{
+    height: 4rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color:rgba(255, 255, 255, 0.295);
+box-shadow: 2px 2px 2px grey;
+}
+h3{
+    font-weight: bold;
+}
+.trends > form{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding-top: 1rem;
+    height: 25vh;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, 0.116);
+}
+.trends form > input, .trends form > textarea{
+    height: 3rem;
+    border: 1px double rgba(0, 0, 255, 0.295);
+    border-radius: 20px ;
+    border-bottom: 2px solid black;
+}
+.trends form > label{
+    text-align: center;
 }
