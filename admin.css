@@ -37,7 +37,7 @@ h3 > i,h1 > i{
     padding-top:2.5rem ;
         font-size: 0.8rem;
 }
-a{
+.ac{
     display: inline-block;
     border-radius: 30px;
     padding-top: 0.5rem;
@@ -94,4 +94,8 @@ h3{
 }
 .trends form > label{
     text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
 }
