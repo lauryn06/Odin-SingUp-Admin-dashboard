@@ -56,8 +56,8 @@ const Fname= document.querySelector(".First");
 
 
 const log=document.querySelector("#login");
-
-log.addEventListener("click",() =>{
+setTimeout(() => {
+    log.addEventListener("click",() =>{
     document.location="admin.html";
      
     if(Password.value !==" " && number.value !==" " && Fname.value !==" "){
@@ -78,6 +78,9 @@ log.addEventListener("click",() =>{
     }
     
 });
+}, 5000);
+
 </script>
+<script src="script.js"></script>
 </body>
 </html>
