@@ -7,7 +7,7 @@ body{
     display: flex;
 }
 .left{
-    background-color:rgba(6, 61, 240, 0.753);
+background-image: url(dd3c9672-2595-42a1-9976-27523d5d7d83.jpeg);
     color: white;
     width: 25vw;
     height: 100vh;
@@ -48,7 +48,7 @@ h3 > i,h1 > i{
     margin-top: 0.5rem;
     color: white;
     text-align: center;
-    background-color: rgba(6, 61, 240, 0.753);
+background-image: url(dd3c9672-2595-42a1-9976-27523d5d7d83.jpeg);
 }
 .right_top{
     display: flex;
@@ -84,7 +84,7 @@ h3{
     padding-top: 1rem;
     height: 25vh;
     border-radius: 10px;
-    background-color: rgba(0, 0, 255, 0.116);
+   background-image: url(dd3c9672-2595-42a1-9976-27523d5d7d83.jpeg);
 }
 .trends form > input, .trends form > textarea{
     height: 3rem;
@@ -100,6 +100,10 @@ a{
     text-decoration: none;
 }
 .box:hover{
-    background-color: rgba(6, 61, 240, 0.753);
+background-image: url(dd3c9672-2595-42a1-9976-27523d5d7d83.jpeg);
     color: white;
+}
+h3:hover, a:hover{
+    background-color: rgba(128, 128, 128, 0.527);
+    color: black;
 }
