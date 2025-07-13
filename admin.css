@@ -99,3 +99,7 @@ a{
     color: white;
     text-decoration: none;
 }
+.box:hover{
+    background-color: rgba(6, 61, 240, 0.753);
+    color: white;
+}
